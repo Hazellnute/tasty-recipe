@@ -13,10 +13,7 @@
         <div class="text-center mt-4">
           <p class="fw-semibold">
             Don’t have an account?<span style="color: #4c4ddc">
-              <a to="/signup" class="text-decoration-none">
-                Signup</a
-              ></span
-            >
+              <router-link to="/signup" class="text-decoration-none"> Signup</router-link></span>
           </p>
         </div>
       </div>

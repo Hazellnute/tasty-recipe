@@ -19,8 +19,7 @@
         <div class="text-center mt-4">
           <p class="fw-semibold">
             Already have account?<span style="color: #4c4ddc"
-              ><a class="text-decoration-none"> Login</a></span
-            >
+              ><router-link to="/login" class="text-decoration-none"> Login</router-link></span>
           </p>
         </div>
       </div>
