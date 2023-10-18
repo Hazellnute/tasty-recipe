@@ -14,7 +14,7 @@
         <div class="card-body" style="color: #0a0a0a">
           <p class="mb-0">{{recipe.category}}</p>
           <div class="h-50">
-            <h4 class="fs-5 mb-0">{{recipe.name}}</h4>
+            <h4 class="fs-5 mb-0" @click="goToDetail(recipe.id)">{{recipe.name}}</h4>
           </div>
           <p>{{username}}</p>
         </div>
@@ -27,7 +27,20 @@
 </template>
 
 <script setup>
-  defineProps({
-    recipes: { type: Array, required: true }
-  })
+import {useRouter} from 'vue-router';
+const router = useRouter();
+
+function goToDetail(id) {
+  router.push({
+    name: "detailPage",
+    params: { id },
+  });
+} 
+
+
+
+defineProps({
+    recipes: { type: Array, required: true },
+  });
+ 
 </script>

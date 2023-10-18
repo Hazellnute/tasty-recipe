@@ -11,13 +11,34 @@
           <div class="col-md-6"><base-input type="text" identity="firstname" placeholder="Ex: Jack" label="Firstname"></base-input>
           </div>
           <div class="col-md-6">
-            <base-input type="text" identity="Lastname" placeholder="Ex: Daniel" label="Lastname"></base-input>
+            <base-input type="text" identity="lastname" placeholder="Ex: Daniel" label="Lastname"></base-input>
           </div>
         </div>
-        <div class="my-4"><!-- Username --></div>
-        <div class="my-4"><!-- Email --></div>
-        <div class="my-4"><!-- Password --></div>
-        <div class="my-4"><!-- Confirm Password --></div>
+        <div class="my-4">
+          <base-input type="text" identity="username" placeholder="Your username" label="Username"></base-input>
+        </div>
+        <div class="my-4">
+          <base-input type="email" identity="email" placeholder="Your email address" label="Email"></base-input>
+        </div>
+        <div class="my-4">
+          <base-input type="password" identity="password" placeholder="Your password" label="Password"></base-input>
+        </div>
+        <div class="my-4">
+          <base-input type="email" identity="confirmationPassword" placeholder="Same with Password" label="Confirmation Password"></base-input>
+        </div>
+        <div class="my-4">
+          <base-input type="file" identity="recipeImage" label="Profile Photo" isImage="true">
+            <div>
+  	          <div class="border p-1 mt-2 rounded-circle" >
+                <img src="../../assets/images/user.png" class="rounded-circle" width="140" height="150" style="object-fit: cover"/>
+              </div>
+              <div class="text-center" style="transform: translateY(-24px)" >
+                <i class="fa-solid fa-camera fs-5 p-2 rounded-circle bg-white" ></i>
+              </div>
+          </div>
+          </base-input>
+        </div>
+        <base-button class="w-100 login my-3"> Register </base-button>
       </form>
       <div class="text-center mt-4">
         <p class="fw-semibold">
@@ -34,4 +55,5 @@
 
 <script setup>
 import BaseInput from "../ui/BaseInput.vue";
+import BaseButton from "../ui/BaseButton.vue";
 </script>
