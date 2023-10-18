@@ -1,7 +1,7 @@
 <template>
     <div>
         <label :for="identity" class="fw-semibold">
-            Firstname <span style="color: #cb3a31">*</span>
+            {{label}} <span style="color: #cb3a31">*</span>
         </label>
         <input class="form-control" :type="type" :id="identity" :placeholder="placeholder" :value="modelValue"
             :readonly="readonly === '1'" />
