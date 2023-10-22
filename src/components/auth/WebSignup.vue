@@ -94,6 +94,7 @@
             label="Profile Photo"
             isImage="true"
             @input="checkImage"
+            v-model="signupData.recipeImage"
           >
             <div>
               <div class="border p-1 mt-2 rounded-circle">
