@@ -14,6 +14,7 @@
               identity="firstname"
               placeholder="Ex: Jack"
               label="Firstname"
+              v-model="signupData.firstname"
             ></base-input>
           </div>
           <div class="col-md-6">
@@ -22,6 +23,7 @@
               identity="lastname"
               placeholder="Ex: Daniel"
               label="Lastname"
+              v-model="signupData.lastname"
             ></base-input>
           </div>
         </div>
@@ -31,6 +33,7 @@
             identity="username"
             placeholder="Your username"
             label="Username"
+            v-model="signupData.username"
           ></base-input>
         </div>
         <div class="my-4">
@@ -39,6 +42,7 @@
             identity="email"
             placeholder="Your email address"
             label="Email"
+            v-model="signupData.email"
           ></base-input>
         </div>
         <div class="my-4">
