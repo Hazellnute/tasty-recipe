@@ -17,18 +17,31 @@
           </div>
         </div>
       </li>
-      <li class="list-group-item user-menu">
+      <li
+        class="list-group-item user-menu"
+        @click="menuClicked('personal-info')"
+      >
         <i class="fa-solid fa-user pe-2"></i>Personal Info
       </li>
-      <li class="list-group-item user-menu">
+      <li
+        class="list-group-item user-menu"
+        @click="menuClicked('favorite-recipes')"
+      >
         <i class="fas fa-heart pe-2"></i>Favorited Recipes
       </li>
-      <li class="list-group-item user-menu">
+      <li class="list-group-item user-menu" @click="menuClicked('user-recipe')">
         <i class="fa-solid fa-burger pe-2"></i>My Recipe
       </li>
     </ul>
   </div>
 </template>
+
+<script setup>
+const emit = defineEmits(["changeComponent"]);
+const menuClicked = (option) => {
+  emit("changeComponent", option);
+};
+</script>
 
 <style scoped>
 .user-menu:hover {

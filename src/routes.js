@@ -10,4 +10,5 @@ export const routes = [
   { path: "/login", name: "login", component: LoginPage },
   { path: "/recipe/:id", name: "detailPage", component: DetailPage },
   { path: "/user", name: "userPage", component: UserPage },
+  { path: "/user/:component", name: "userPage", component: UserPage },
 ];
