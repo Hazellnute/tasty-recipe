@@ -92,12 +92,11 @@
             type="file"
             identity="recipeImage"
             label="Profile Photo"
-            isImage="true"
             @input="checkImage"
             v-model="signupData.image"
           >
             <div>
-              <div class="border p-1 mt-2 rounded-circle">
+              <!-- <div class="border p-1 mt-2 rounded-circle">
                 <img
                   :src="signupData.imageLink"
                   class="rounded-circle"
@@ -110,7 +109,7 @@
                 <i
                   class="fa-solid fa-camera fs-5 p-2 rounded-circle bg-white"
                 ></i>
-              </div>
+              </div> -->
             </div>
           </base-input>
         </div>
