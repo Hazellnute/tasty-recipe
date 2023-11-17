@@ -96,7 +96,7 @@ export default {
     async getUser({ commit }, payload) {
       try {
         const { data } = await axios.get(
-          `https://recipe-vue-batch2-default-rtdb.firebaseio.com/user.json`
+          `https://vue-js-project-39515-default-rtdb.firebaseio.com/user.json`
         );
         for (let key in data) {
           if (data[key].userId === payload) {
